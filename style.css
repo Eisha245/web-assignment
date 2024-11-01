@@ -1,0 +1,105 @@
+/* style.css */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: linear-gradient(to top, rgba(6, 9, 6, 0.75), rgba(7, 20, 8, 0.75)), url(gym.jpg) center/cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+
+}
+
+.logo {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+align-items: center; 
+   align-content: center;
+   position: relative;
+   left: 350px;
+   /* top: 30px; */
+}
+
+.logo a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+   /* align-items: center; */
+   align-content: center;
+    cursor: pointer;
+}
+.logo a:hover{
+    color: red;
+    /* background: yellow; */
+}
+
+.sub {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: green;
+    color: white;
+}
+button:hover{
+    color: white;
+    background: red;
+}
+
+.main{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* position: relative;
+    top: 200px;
+    left: 350px; */
+}
+h1{
+   font-weight: bold;
+   font-size: 40px;
+   position: relative;
+    top: 180px;
+    left: 370px;
+} 
+p{
+    align-items: baseline;
+    position: relative;
+    top: 200px;
+    left: 330px;
+}
+.btn{
+    background: white;
+    position: relative;
+    top: 300px;
+    left: 600px;
+    padding: 15px;
+    text-decoration: none;
+    color: red;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background: green;
+}

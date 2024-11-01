@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph and Image Layout</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* Background styling for the main content container */
+        .pk {
+            background: linear-gradient(to top, rgba(6, 9, 6, 0.75), rgba(7, 20, 8, 0.75)), url('gym123') center/cover;
+            width: 100%;
+            min-height: 100vh;
+            padding: 20px; /* Added padding to avoid text touching the edges */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            div[style*="display: flex"] {
+                flex-direction: column;
+                text-align: center;
+            }
+            h1 {
+                left: 0;
+                text-align: center;
+                position: relative; /* Removed fixed positioning */
+            }
+        }
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+
+}
+
+.logo {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+align-items: center; 
+   align-content: center;
+   position: relative;
+   left: 350px;
+   /* top: 30px; */
+}
+
+.logo a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+   /* align-items: center; */
+   align-content: center;
+    cursor: pointer;
+}
+.logo a:hover{
+    color: red;
+    /* background: yellow; */
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">Home</a>
+            <a href="Workout.html">Workout</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Form</a>
+          </div>
+          <div class="sub">
+            <button aria-label="Join Us">Join Us</button>
+            <button aria-label="Contact Us">Contact Us</button>
+          </div>
+        </nav>
+        <div class="main">
+   
+    <div class="pk">
+        <h1 style="font-weight: bold; color: white; position: relative; left: 70px; top: 30px;">
+            Discover Your Strength
+        </h1>
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; padding: 20px; max-width: 1200px; margin: auto; gap: 40px;">
+            
+            <!-- Text Section -->
+            <div style="flex: 1; font-size: 18px; line-height: 1.6; color: white;">
+                <p>
+                    Elevate your life with our fitness and wellness programs that bring both physical and mental balance. 
+                    We offer comprehensive courses, personalized guidance, and a community that supports your goals.
+                </p>
+                <p>
+                    Being healthy and fit increases our energy levels, boosts confidence, burns calories, and reduces the risk of chronic diseases, leading to a longer and happier life. Health and fitness offer many benefits, such as a decreased risk of Type-2 diabetes, lower blood pressure, and balanced cholesterol levels.
+                </p>
+                <p>
+                    Regular workouts empower you to discover your inner strength and improve resilience. With consistent training, your stamina grows, allowing you to enjoy a more active and fulfilling lifestyle. Whether it's cardio, strength training, or flexibility exercises, each workout builds a stronger, healthier you.
+                </p>
+                
+            </div>
+
+            <!-- Image Section -->
+            <div style="flex: 1; text-align: center;">
+                <img src="gym123.avif" alt="Fitness and Wellness Image" style="width: 100%; max-width: 450px; border-radius: 10px;">
+                <p style="font-size: 16px; margin-top: 10px; color: white;">
+                    A workout is more than just exercise; it's a journey towards a better version of yourself. It’s a time to test your limits, improve your fitness levels, and build mental toughness. From enhancing cardiovascular health to improving muscular endurance, each session is an investment in yourself.
+                </p>
+                <p style="font-size: 16px; color: white;">
+                    Whether your goal is to build strength, gain flexibility, or lose weight, our programs are designed to support you every step of the way. Discover routines that match your interests, from high-intensity interval training to peaceful yoga flows. Embrace the journey, celebrate your progress, and transform your life one workout at a time.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

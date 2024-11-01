@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph and Image Layout</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* Background styling for the main content container */
+        .pk {
+            background: linear-gradient(to top, rgba(46, 20, 49, 0.75), rgba(0, 0, 0, 0.75)), url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fnutrition&psig=AOvVaw26pa-lIQCHKT9l_sFrUcC_&ust=1730482564169000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCLCW0YeUuYkDFQAAAAAdAAAAABAE') center/cover;
+            width: 100%;
+            min-height: 100vh;
+            padding: 20px; /* Added padding to avoid text touching the edges */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            div[style*="display: flex"] {
+                flex-direction: column;
+                text-align: center;
+            }
+            h1 {
+                left: 0;
+                text-align: center;
+                position: relative; /* Removed fixed positioning */
+            }
+        }
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+
+}
+
+.logo {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+align-items: center; 
+   align-content: center;
+   position: relative;
+   left: 350px;
+   /* top: 30px; */
+}
+
+.logo a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+   /* align-items: center; */
+   align-content: center;
+    cursor: pointer;
+}
+.logo a:hover{
+    color: red;
+    /* background: yellow; */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">Home</a>
+            <a href="Workout.html">Workout</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Form</a>
+          </div>
+          <div class="sub">
+            <button aria-label="Join Us">Join Us</button>
+            <button aria-label="Contact Us">Contact Us</button>
+          </div>
+        </nav>
+        <div class="main">
+    <div class="pk">
+        <h1 style="font-weight: bold; color: white; text-align: center; margin-bottom: 20px;">
+            A healthy outside starts from the inside.
+        </h1>
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; padding: 20px; max-width: 1200px; margin: auto; gap: 40px;">
+            
+            <!-- Text Section -->
+            <div style="flex: 1; font-size: 18px; line-height: 1.6; color: white;">
+                <p>
+                    Elevate your life with our fitness and wellness programs that bring both physical and mental balance. 
+                    We offer comprehensive courses, personalized guidance, and a community that supports your goals.
+                </p>
+                <p>
+                    Being healthy and fit increases our energy levels, boosts confidence, burns calories, and reduces the risk of chronic diseases, leading to a longer and happier life. Health and fitness offer many benefits, such as a decreased risk of Type-2 diabetes, lower blood pressure, and balanced cholesterol levels.
+                </p>
+                <p>
+                    Regular workouts empower you to discover your inner strength and improve resilience. With consistent training, your stamina grows, allowing you to enjoy a more active and fulfilling lifestyle. Whether it's cardio, strength training, or flexibility exercises, each workout builds a stronger, healthier you.
+                </p>
+            </div>
+
+            <!-- Image Section -->
+            <div style="flex: 1; text-align: center;">
+                <img src="nt.webp" alt="Fitness and Wellness Image" style="width: 100%; max-width: 450px; border-radius: 10px;">
+                <p style="font-size: 16px; margin-top: 10px; color: white;">
+                    A workout is more than just exercise; it's a journey towards a better version of yourself. It’s a time to test your limits, improve your fitness levels, and build mental toughness. From enhancing cardiovascular health to improving muscular endurance, each session is an investment in yourself.
+                </p>
+            </div>
+        </div>
+
+        <!-- Nutrition Section -->
+        <h2 style="font-weight: bold; color: white; text-align: center; margin: 40px 0 20px;">
+            Nourish Your Body
+        </h2>
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; padding: 20px; max-width: 1200px; margin: auto; gap: 40px;">
+
+            <!-- Nutrition Text Section -->
+            <div style="flex: 1; font-size: 18px; line-height: 1.6; color: white;">
+                <p>
+                    Nutrition is the cornerstone of a healthy lifestyle. It fuels your body for workouts and daily activities. Here are some key points to consider:
+                </p>
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li>Consume a variety of foods to ensure a balanced intake of nutrients.</li>
+                    <li>Focus on whole foods such as fruits, vegetables, lean proteins, and whole grains.</li>
+                    <li>Stay hydrated; water is essential for optimal performance and recovery.</li>
+                    <li>Limit processed foods high in sugars and unhealthy fats.</li>
+                    <li>Plan meals to support your fitness goals and energy needs.</li>
+                </ul>
+            </div>
+
+            <!-- Nutrition Image Section -->
+            <div style="flex: 1; text-align: center;">
+                <img src="pkl.jpeg" alt="Nutrition and Healthy Food" style="width: 100%; max-width: 450px; border-radius: 10px;">
+                <p style="font-size: 16px; margin-top: 10px; color: white;">
+                    A balanced diet plays a significant role in enhancing your fitness journey. Fuel your body with nutritious foods to maximize your performance and recovery.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
